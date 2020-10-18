@@ -7,11 +7,11 @@ function excuseGnerator(){
     
     let when = ["after school. ", "yesterday. ", "this morning. ", "at the ragnarok. "];
     
-    let i = Math.floor(Math.random()*4);
-    let r = Math.floor(Math.random()*4);
-    let e = Math.floor(Math.random()*4);
-    let j = Math.floor(Math.random()*4);
+    let indexWho = Math.floor(Math.random()*4);
+    let indexAction = Math.floor(Math.random()*4);
+    let indexWhat = Math.floor(Math.random()*4);
+    let indexWhen = Math.floor(Math.random()*4);
     
-    return who[i] + action[e] + what[r] + when[j];  
+    return who[indexWho] + action[indexAction] + what[indexWhat] + when[indexWhen];  
 }
 document.write(excuseGnerator());
